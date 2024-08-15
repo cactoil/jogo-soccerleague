@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Estádios Minecraft</title>
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-sm">
+                    <div class="card-header text-center">
+                        <h3>Jogo de Estádios Minecraft</h3>
+                    </div>
+                    <div class="card-body text-center">
+                        <img id="screenshot" class="img-fluid rounded mb-3" src="" alt="Captura de tela do estádio">
+                        <form id="guess-form">
+                            <div class="form-group">
+                                <label for="stadium">Selecione o estádio:</label>
+                                <select id="stadium" class="form-control">
+                                    <option value="team-honra-stadium">Team Honra Stadium</option>
+		<option value="roma-stadium">Roma Stadium</option>
+        <option value="arena-conda">Arena Condá</option>
+        <option value="parque-do-inferno">Parque do Inferno</option>
+        <option value="allianz-stadium">Allianz Stadium</option>
+        <option value="jamantas-aquarium">Jamantas Aquarium</option>
+        <option value="signal-iduna-park">Signal Iduna Park</option>
+        <option value="parc-des-princes">Parc des Princes</option>
+        <option value="scarlet-domain">Scarlet Domain</option>
+        <option value="broomario-vk">Broomário VK</option>
+        <option value="canamericarena">Canamericarena</option>
+        <option value="floresta">Floresta</option>
+        <option value="violet-park">Violet Park</option>
+        <option value="vale-sombrio">Vale Sombrio/Vila Belmiro</option>
+        <option value="wolf-stadium">Wolf Stadium</option>
+        <option value="maracana">Maracanã</option>
+        <option value="toca-do-gato">Toca do Gato</option>
+        <option value="coldnessz-stadium">Coldnessz Stadium</option>
+        <option value="anfield">Anfield</option>
+        <option value="nilton-santos">Nilton Santos</option>
+        <option value="lupus-azulus">Lupus Azulus</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="year">Selecione o ano:</label>
+                                <select id="year" class="form-control">
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                </select>
+                            </div>
+                            <button type="button" class="btn btn-primary" onclick="checkAnswer()">Enviar</button>
+                            <button type="button" class="btn btn-secondary" onclick="nextImage()">Próxima Imagem</button>
+                        </form>
+                        <div id="result" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Script do Bootstrap e jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
